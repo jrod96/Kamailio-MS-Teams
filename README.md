@@ -3,10 +3,9 @@ Tested on Debian 11 (Bullseye) with Kamailio 5.4.4
 - Add your required configuration on your MS Teams tenant
 https://learn.microsoft.com/en-us/microsoftteams/direct-routing-connect-the-sbc
 
-- Install required Kamailio Repositories
-  apt update \\
-  && apt install -y kamailio* \\
-  && apt install -y mariadb-server
+- Install required Kamailio Repositories:
+
+  apt update && apt install -y kamailio* mariadb-server
   
 - Configure MariaDB and set root password
   mysql_secure_installation
