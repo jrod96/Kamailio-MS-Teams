@@ -20,7 +20,7 @@ https://learn.microsoft.com/en-us/microsoftteams/direct-routing-connect-the-sbc
  
   **MS Teams FQDNs:** sip.pstnhub.microsoft.com, sip2.pstnhub.microsoft.com, sip3.pstnhub.microsoft.com
   
-  **Important notes:** can't use self-signed certs.... your Kamailio FQDN needs to be in the CN and SAN fields.
+  **Important notes:** can't use self-signed certs.... your Kamailio FQDN needs to be in the CN and SAN fields.... I used let's encrypt in this example.
   
 ![image](https://user-images.githubusercontent.com/114504748/192582223-0e628e8d-d20e-4488-bbdf-9d673b10f476.png)
 
