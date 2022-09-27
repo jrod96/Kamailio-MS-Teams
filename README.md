@@ -7,8 +7,7 @@ https://learn.microsoft.com/en-us/microsoftteams/direct-routing-connect-the-sbc
 
   apt update && apt install -y kamailio* mariadb-server
   
-- Configure MariaDB and set root password
-  mysql_secure_installation
+- Configure MariaDB and set root password: mysql_secure_installation
   
  - Edit /etc/kamailio/kamctlrc file and add the required SIP domain and database info.
  - Run 'kamdbctl create' to create kamailio database
@@ -19,6 +18,8 @@ https://learn.microsoft.com/en-us/microsoftteams/direct-routing-connect-the-sbc
  - Change your Kamailio public FQDN in both /etc/kamailio/dispatcher.list and /etc/kamailio/kamailio.cfg (default is teams.sipxtel.com)
  - Add your Public Kamailio FQDN and MS Teams domain in your local domain database (kamctl domain add <domain>) and reload after finished (kamctl domain reload)
  
+  MS Teams FQDNs: sip.pstnhub.microsoft.com, sip2.pstnhub.microsoft.com, sip3.pstnhub.microsoft.com
+  
 ![image](https://user-images.githubusercontent.com/114504748/192582223-0e628e8d-d20e-4488-bbdf-9d673b10f476.png)
 
 ![image](https://user-images.githubusercontent.com/114504748/192582410-44acdcfb-27cb-4178-9ddb-23b0ce5742a2.png)
