@@ -28,6 +28,17 @@ https://learn.microsoft.com/en-us/microsoftteams/direct-routing-connect-the-sbc
   sip3.pstnhub.microsoft.com
   
   **Important notes:** can't use self-signed certs.... your Kamailio FQDN needs to be in the CN and SAN fields.... I used let's encrypt in this example.
+  If you are using the default CA list from linux, there could be cases in which the TLS handshake could not be established with Teams because missing   
+  root/intermediate certificates in your trusted store. It can be fixed either installing the root/intermediate CAs being used by teams or creating your 
+  own chain. 
+  
+  https://learn.microsoft.com/en-us/purview/encryption-office-365-tls-certificates-changes?view=o365-worldwide
+  
+  **Root/Intermediate CAs used by Teams:**
+  
+  Baltimore CyberTrust Root
+  Microsoft RSA TLS CA 02
+  DigiCert Global Root G2
   
   - Resources:<br>
   https://blog.opensips.org/2019/09/16/opensips-as-ms-teams-sbc/ <br>
